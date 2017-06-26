@@ -24,53 +24,67 @@ router.get('/api/store', (req, res, next) => {
         });
 });
 
-router.get('/api/store', (req, res, next) => {
-    // if (!req.cookies.token) {
-    //     return next(boom.create(401, 'Unauthorized'))
-    // } else {
-    //     knex('store')
-    //         .join('store', 'store.id', 'store_id')
-    //         .then((item) => {
-    //             res.send(humps.camelizeKeys(item));
-    //         });
-    // }
+router.get('/api/store/:id', (req, res, next) => {
+    knex('store')
+        .orderBy('id', req.params.id)
+        .then((item) => {
+            if (!item) {
+                return next();
+            }
+            res.send(humps.camelizeKeys(item[0]));
+        })
+        .catch((err) => {
+            next(err);
+        });
 });
 
-router.get('/store/check', (req, res, next) => {
-    // if (!req.cookies.token) {
-    //     return next(boom.create(401, 'Unauthorized'));
-    // } else {
-    //     let id = +req.query.storeId;
-    //     knex('store')
-    //         .where('id', id)
-    //         .then((item) => {
-    //             if (!item.length) {
-    //                 res.send(false);
-    //             } else {
-    //                 res.send(true);
-    //             }
-    //         })
-    // }
-});
+// router.get('/api/store/:id', (req, res, next) => {
+//     // if (!req.cookies.token) {
+//     //     return next(boom.create(401, 'Unauthorized'))
+//     // } else {
+//     //     knex('store')
+//     //         .join('store', 'store.id', 'store_id')
+//     //         .then((item) => {
+//     //             res.send(humps.camelizeKeys(item));
+//     //         });
+//     // }
+// });
 
-router.post('/store', (req, res, next) => {
-    // if (!req.cookies.token) {
-    //     return next(boom.create(401, 'Unauthorized'))
-    // }
-    // knex.raw("select setval('store_id_seq', (select max(id) from store))")
-    //     .then(
-    //         knex('store')
-    //         .insert({
-    //             id: req.body.id,
-    //             store_id: req.body.storeId,
-    //             user_id: 1
-    //         })
-    //         .returning('*')
-    //         .then((item1) => {
-    //             res.send(humps.camelizeKeys(item1[0]));
-    //         })
-    //     );
-});
+// router.get('/store/check', (req, res, next) => {
+//     // if (!req.cookies.token) {
+//     //     return next(boom.create(401, 'Unauthorized'));
+//     // } else {
+//     //     let id = +req.query.storeId;
+//     //     knex('store')
+//     //         .where('id', id)
+//     //         .then((item) => {
+//     //             if (!item.length) {
+//     //                 res.send(false);
+//     //             } else {
+//     //                 res.send(true);
+//     //             }
+//     //         })
+//     // }
+// });
+
+// router.post('/store', (req, res, next) => {
+//     // if (!req.cookies.token) {
+//     //     return next(boom.create(401, 'Unauthorized'))
+//     // }
+//     // knex.raw("select setval('store_id_seq', (select max(id) from store))")
+//     //     .then(
+//     //         knex('store')
+//     //         .insert({
+//     //             id: req.body.id,
+//     //             store_id: req.body.storeId,
+//     //             user_id: 1
+//     //         })
+//     //         .returning('*')
+//     //         .then((item1) => {
+//     //             res.send(humps.camelizeKeys(item1[0]));
+//     //         })
+//     //     );
+// });
 
 router.delete('/store', (req, res, next) => {
   //   if (!req.cookies.token) {

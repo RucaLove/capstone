@@ -17,9 +17,15 @@
     function onInit() {
       StoreService.allItems()
         .then((allitems) => {
-          console.log("all items should be here: ", allitems)
+          // console.log("all items should be here: ", allitems)
           vm.items = allitems
         })
+
+        // StoreService.item()
+        //   .then((item) => {
+        //     // console.log("one items should be here: ", item)
+        //     vm.item = item
+        //   })
     }
 
     // function gostore() {
