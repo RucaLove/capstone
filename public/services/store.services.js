@@ -8,10 +8,8 @@
 
   function service($http, StoreService) {
     this.allItems = function() { // Grabs all items
-      return $http
-        .get('/api/store')
-        .then(all => {
-          console.log("HAYYYY", all.data)
+      return $http.get('/api/store').then(all => {
+          // console.log("HAYYYY", all.data)
           return all.data
         }, err => {
           // console.log("NOOOO");

@@ -3,76 +3,33 @@
         <div class="parallax"><img src="/images/books.jpeg"></div>
       </div> -->
 
-      <div id="container" class="container">
+      <div id="container" class="container store-front">
         <div class="row">
 
-          <div class="col s-4">
-            <div class="card" ng-repeat="item in $ctrl.items">
-              <div class="card-image waves-effect waves-block waves-light" style="width: 350px; height: 350px;">
-                <img class="activator" src="{{item.img}}">
+          <div class="col s12 m7">
+            <div class="card horizontal" ng-repeat="item in $ctrl.items">
+              <div class="card-image">
+                <img src="{{item.img}}">
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">{{item.productName}}<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">{{item.price}}</a></p>
-                <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="LD6GQW4GZ2K32">
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">16oz tin of dosha herbal tea blend.<i class="material-icons right">close</i></span>
-                <p>Made using organic and naturally grown herbs of rosemary, shatavari, lotus leaf, sarsaparilla root, chamomile flower, hibiscus flower, chrysanthemum flower, spearmint, cinnamon, lemon peel, orange peel, hawthorn leaf and flower.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col s-3">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light" style="width: 350px; height: 350px;">
-                <img class="activator" src="/images/vata-tea.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Vata Herbal Tea Blend<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">$13.00 USD</a></p>
-                <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="LD6GQW4GZ2K32">
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">16oz tin of dosha herbal tea blend.<i class="material-icons right">close</i></span>
-                <p>Made using organic and naturally grown herbs of rosemary, shatavari, lotus leaf, sarsaparilla root, chamomile flower, hibiscus flower, chrysanthemum flower, spearmint, cinnamon, lemon peel, orange peel, hawthorn leaf and flower.</p>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p class="item-name">{{item.productName}}</p>
+                  <p class="item-name">{{item.size}}</p>
+                  <p class="item-name">{{item.price}}</p>
+                </div>
+                <div class="card-action">
+                  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="LD6GQW4GZ2K32">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col s-3">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light" style="width: 350px; height: 350px;">
-                <img class="activator" src="/images/vata-tea.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Vata Herbal Tea Blend<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">$13.00 USD</a></p>
-                <p><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="LD6GQW4GZ2K32">
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form></p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">16oz tin of dosha herbal tea blend.<i class="material-icons right">close</i></span>
-                <p>Made using organic and naturally grown herbs of rosemary, shatavari, lotus leaf, sarsaparilla root, chamomile flower, hibiscus flower, chrysanthemum flower, spearmint, cinnamon, lemon peel, orange peel, hawthorn leaf and flower.</p>
-              </div>
-            </div>
-          </div> -->
-
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="WYPA3GJWGQ592">
             <table>
@@ -86,7 +43,7 @@
             </table>
             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
+          </form> -->
 
         </div>
       </div>

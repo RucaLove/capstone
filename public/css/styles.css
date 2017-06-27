@@ -39,7 +39,8 @@ h4 {
 
 h5 {
   font-size: 1.2em;
-  color: #607d8b;
+  /*color: #607d8b;*/
+  color: black;
   text-transform: uppercase;
   text-align: right;
 }
@@ -141,9 +142,14 @@ footer.page-footer small {
 }
 
 /*STYLING FOR STORE*/
+/*.store-front {
+  border-radius: 10px;
+  border-color: black;
+  border-width: medium;
+}*/
 
-.card {
-
+.item-name {
+  font-size: 16px;
 }
 
 /*STYLING FOR BIO*/
@@ -228,4 +234,24 @@ footer.page-footer small {
     filter: alpha(opacity=0);
     /* For IE8 and earlier */
   }
+}
+
+/*CSS FOR POSES TEMPLATE*/
+
+#poseContainer {
+  margin: auto;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.poseName {
+  padding-left: 10px;
+  text-align: center;
+  font-size: 60px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+span {
+  padding-left: 20px;
+  text-align: right;
 }

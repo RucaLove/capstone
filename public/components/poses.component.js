@@ -3,23 +3,25 @@
 
   angular.module('hibiskiss')
     .component('poses', {
-      templateUrl: '/templates/poses.template.html',
+      templateUrl: '/templates/poses.template.html', // POSES TEMPLATE
       controller: PosesController
     })
+  //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
+  PosesController.$inject = ['$state', 'PosesService']
 
-  PosesController.$inject = ['PosesService', '$http', '$stateParams', '$state']
-
-  function PosesController(PosesService, $http, $stateParams, $state) {
-    console.log("you are in the Poses Controller")
+  function PosesController($state, PosesService) {
     const vm = this
     vm.$onInit = onInit
+    // vm.goposes = goposes
 
     function onInit() {
-      PosesService.allPoses()
-      .then((allposes) => {
-        console.log("all poses shuld be here: ", allposes)
-        vm.poses = allposes
-      })
+      PosesService.allItems()
+        .then((allitems) => {
+          // console.log("all items should be here: ", allitems)
+          vm.items = allitems
+        })
+
     }
-  }
-})()
+
+  } // END Poses Controller
+}());
