@@ -18,7 +18,7 @@
                 component: 'nav'
             })
             .state({ // 1st STATE (on click in this case)
-                name: 'main',
+                name: 'hibiskiss',
                 url: '/hibiskiss',
                 component: 'hibiskiss'
             })
