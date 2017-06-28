@@ -1,18 +1,14 @@
-<div class="col s4">
-    <div class="well media container1" id='poseContainer' ng-repeat="item in $ctrl.items">
-
-        <ul class="collection">
-            <li class="collection-item avatar">
-                <span class="title"><h5>{{item.poseNameSanskrit}} | {{item.poseNameEnglish}}</h5></span>
-                <img src="{{item.poseImg}}" alt="asana" class="" width="25%">
-                <h5>{{item.difficultyLevel}} <br>
-               {{item.category}} <br>
-               {{item.chakraSanskrit}} | {{item.chakraEnglish}} CHAKRA
-            </h5>
-                <a href="#!" class="secondary-content"><i class="material-icons">{{item.poseNameSanskritCharacters}}</i></a>
-            </li>
-        </ul>
-
+<div id="container" class="store-front">
+    <div class="row">
+        <div class="col-xs-6 col-md-4" ng-repeat="item in $ctrl.items">
+            <a href="#" class="thumbnail">
+                <img src="{{item.poseImg}}" alt="{{item.poseNameEnglish}}">
+            </a>
+            <p class="poseName">{{item.poseNameSanskrit}} | {{item.poseNameEnglish}} | {{item.poseNameSanskritCharacters}}</p>
+            <p class="poseName">Catergory: {{item.category}}</p>
+            <p class="poseName">Difficuly level: {{item.difficultyLevel}}</p>
+            <p class="poseName">{{item.chakraSanskrit}} ({{item.chakraEnglish}}) CHAKRA</p>
+            <br>
+        </div>
     </div>
-
 </div>

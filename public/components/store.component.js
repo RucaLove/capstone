@@ -7,9 +7,9 @@
       controller: StoreController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  StoreController.$inject = ['$state', 'StoreService']
+  StoreController.$inject = ['$state', 'StoreService', '$stateParams']
 
-  function StoreController($state, StoreService) {
+  function StoreController($state, StoreService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
     // vm.gostore = gostore

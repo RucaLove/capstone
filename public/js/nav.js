@@ -1,8 +1,6 @@
 (function() {
   'use strict';
 
-  $('.button-collapse').sideNav();
-
   $.getJSON('/token')
     .done((loggedIn) => {
       const $firstNavItems = $('.firstNavItem');

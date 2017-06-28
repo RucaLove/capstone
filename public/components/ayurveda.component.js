@@ -7,9 +7,9 @@
       controller: AyurvedaController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  AyurvedaController.$inject = ['$state', 'AyurvedaService']
+  AyurvedaController.$inject = ['$state', 'AyurvedaService', '$stateParams']
 
-  function AyurvedaController($state, AyurvedaService) {
+  function AyurvedaController($state, AyurvedaService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
 

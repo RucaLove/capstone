@@ -7,9 +7,9 @@
       controller: ContactController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  ContactController.$inject = ['$state', 'ContactService']
+  ContactController.$inject = ['$state', 'ContactService', '$stateParams']
 
-  function ContactController($state, ContactService) {
+  function ContactController($state, ContactService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
 

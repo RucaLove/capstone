@@ -7,9 +7,9 @@
       controller: NavigationController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  NavigationController.$inject = ['$state']
+  NavigationController.$inject = ['$state', '$stateParams', 'NavigationService']
 
-  function NavigationController($state) {
+  function NavigationController($state, $stateParams, NavigationService) {
     const vm = this
     vm.$onInit = onInit
     // vm.gonav = gonav

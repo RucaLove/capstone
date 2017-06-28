@@ -90,7 +90,7 @@ exports.seed = function(knex) {
           id: 10,
           dosha: "Custom",
           product_name: "Custom Churna Spice Blend",
-          img : "",
+          img : "images/soup.jpg",
           price : "$13.00 USD",
           size : "4oz",
           description : "Made using organic and naturally grown herbs tailored to your unique dosha."
@@ -144,7 +144,7 @@ exports.seed = function(knex) {
           id: 16,
           dosha: "Custom",
           product_name: "Abhyanga Oil Custom Concentrate",
-          img : "",
+          img : "images/custom-oil.jpg",
           price : "$10.00 USD",
           size : "2oz",
           description : "Made using 100% essential oils tailored to your unique dosha."

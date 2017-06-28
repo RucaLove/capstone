@@ -24,9 +24,9 @@
         component: 'main'
       })
     .state({ // 1st STATE (on click in this case)
-      name: 'yoga',
-      url: '/yoga',
-      component: 'yoga'
+      name: 'academy',
+      url: '/academy',
+      component: 'academy'
     })
     .state({ // 2nd STATE (on click in this case)
       name: 'ayurveda',
@@ -34,6 +34,31 @@
       component: 'ayurveda'
     })
     .state({ // 3rd STATE (on click in this case)
+      name: 'contact',
+      url: '/contact',
+      component: 'contact'
+    })
+    .state({ // 3rd STATE (on click in this case)
+      name: 'quiz',
+      url: '/quiz',
+      component: 'quiz'
+    })
+    .state({ // 1st STATE (on click in this case)
+      name: 'pose',
+      url: '/poses/:id',
+      component: 'onePose'
+    })
+    .state({ // 5th STATE (on click in this case)
+      name: 'schedule',
+      url: '/schedule',
+      component: 'schedule'
+    })
+    .state({ // 5th STATE (on click in this case)
+      name: 'signup',
+      url: '/signup',
+      component: 'signup'
+    })
+    .state({ // 5th STATE (on click in this case)
       name: 'store',
       url: '/store',
       component: 'store'
@@ -43,35 +68,15 @@
       url: '/users/:id',
       component: 'users'
     })
-    .state({ // 1st STATE (on click in this case)
-      name: 'main.poses',
-      url: '/poses',
-      component: 'poses'
-    })
-    .state({ // 1st STATE (on click in this case)
-      name: 'pose',
-      url: '/poses/:id',
-      component: 'onePose'
-    })
+    // .state({ // 1st STATE (on click in this case)
+    //   name: 'main.poses',
+    //   url: '/poses',
+    //   component: 'poses'
+    // })
     .state({ // 5th STATE (on click in this case)
-      name: 'academy',
-      url: '/academy',
-      component: 'academy'
-    })
-    .state({ // 5th STATE (on click in this case)
-      name: 'contact',
-      url: '/contact',
-      component: 'contact'
-    })
-    .state({ // 5th STATE (on click in this case)
-      name: 'dosha',
-      url: '/dosha',
-      component: 'dosha'
-    })
-    .state({ // 5th STATE (on click in this case)
-      name: 'schedule',
-      url: '/schedule',
-      component: 'schedule'
+      name: 'yoga',
+      url: '/yoga',
+      component: 'yoga'
     })
 
   } // END CONFIG FUNCTION

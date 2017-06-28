@@ -7,9 +7,9 @@
       controller: PosesController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  PosesController.$inject = ['$state', 'PosesService']
+  PosesController.$inject = ['$state', 'PosesService', '$stateParams']
 
-  function PosesController($state, PosesService) {
+  function PosesController($state, PosesService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
     // vm.goposes = goposes

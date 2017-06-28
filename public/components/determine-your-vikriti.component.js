@@ -7,9 +7,9 @@
       controller: QuizController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  QuizController.$inject = ['$state', 'QuizService']
+  QuizController.$inject = ['$state', 'QuizService', '$stateParams']
 
-  function QuizController($state, QuizService) {
+  function QuizController($state, QuizService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
 

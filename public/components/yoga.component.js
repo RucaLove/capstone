@@ -7,9 +7,9 @@
       controller: YogaController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  YogaController.$inject = ['$state', 'YogaService']
+  YogaController.$inject = ['$state', 'YogaService', '$stateParams']
 
-  function YogaController($state, YogaService) {
+  function YogaController($state, YogaService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
 

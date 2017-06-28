@@ -7,9 +7,9 @@
       controller: AcademyController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  AcademyController.$inject = ['$state', 'AcademyService']
+  AcademyController.$inject = ['$state', 'AcademyService', '$stateParams']
 
-  function AcademyController($state, AcademyService) {
+  function AcademyController($state, AcademyService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
 

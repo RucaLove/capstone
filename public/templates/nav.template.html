@@ -1,3 +1,22 @@
+<script type="text/javascript">
+$('.pushpin-nav-wrapper').each(function() {
+var $this = $(this);
+var $target = $('#' + $(this).attr('data-target'));
+$this.pushpin({
+  top: $target.offset().top,
+  bottom: $target.offset().top + $target.outerHeight() - $this.height()
+});
+});
+
+$(document).ready(function(){
+  $('.brand-logo').pushpin({
+    top: 0,
+    bottom: 1000,
+    offset: 0
+  });
+});
+</script>
+
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
@@ -5,7 +24,7 @@
         <span>
           <img class="logo-png" src="/images/logo.png"/>
         </span>
-        <span class="logo-text">HibisKISS Yoga & Ayurveda</span>
+        <span class="logo-text">HibisKISS Yoga & Ayurveda | ॐ</span>
       </a>
 
       <a class="button-collapse" data-activates="mobileNav">
@@ -14,23 +33,23 @@
 
       <!-- Dropdown Structure -->
       <ul id="dropdown1" class="dropdown-content">
-        <!-- <li id="nav-font"><a href="/yoga.html">Path To Enlightenment</a></li>
-        <li class="divider"></li> -->
-        <li id="nav-font"><a href="/poses.html">Asana Library</a></li>
+        <li id="nav-font"><a href="/templates/yoga.html">Path To Enlightenment</a></li>
         <li class="divider"></li>
-        <li id="nav-font"><a href="/schedule.html">Schedule</a></li>
+        <li id="nav-font"><a href="/templates/poses.template.html">Asana Library</a></li>
+        <li class="divider"></li>
+        <li id="nav-font"><a href="/templates/schedule.html">Schedule</a></li>
       </ul>
 
       <ul id="dropdown2" class="dropdown-content">
-        <li id="nav-font"><a href="/ayurveda.html">The Science Of Life</a></li>
+        <li id="nav-font"><a href="/templates/ayurveda.html">The Science Of Life</a></li>
         <li class="divider"></li>
-        <li id="nav-font"><a href="#!">Determine Your Vikriti</a></li>
+        <li id="nav-font"><a href="/templates/dosha.html">Determine Your Vikriti</a></li>
         <li class="divider"></li>
-        <li id="nav-font"><a href="/schedule.html">Workshops</a></li>
+        <li id="nav-font"><a href="/templates/schedule.html">Workshops</a></li>
       </ul>
 
       <ul id="dropdown3" class="dropdown-content">
-        <li id="nav-font"><a href="/academy.html">Yoga</a></li>
+        <li id="nav-font"><a href="/templates/academy.html">Yoga</a></li>
         <li class="divider"></li>
         <li id="nav-font"><a href="#!">Ayurveda</a></li>
       </ul>
@@ -38,23 +57,26 @@
       <div class="nav-wrapper">
         <ul class="right hide-on-med-and-down">
           <!-- Dropdown Trigger -->
-          <li><a class="dropdown-button" href="/yoga.html" data-activates="dropdown1">Yoga<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a class="dropdown-button" href="/ayurveda.html" data-activates="dropdown2">Ayurveda<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a class="dropdown-button" href="/academy.html" data-activates="dropdown3">Online Learning<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="/connect.html">Connect</li>
-          <li><a href="/shop.html">Shop</li>
+          <li><a class="dropdown-button" href="/templates/yoga.html" data-activates="dropdown1">Yoga | योग<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="/templates/ayurveda.html" data-activates="dropdown2">Ayurveda | आयुर्वेद<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="/templates/academy.html" data-activates="dropdown3">Online Learning<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="/templates/connect.html">Connect</li>
+          <li><a href="/templates/store.html">Shop</li>
         </ul>
       </div>
 
       <ul id="mobileNav" class="side-nav">
-        <li><a href="/yoga.html">Yoga</a></li>
-        <li><a href="/ayurveda.html">Ayurveda</li>
-        <li><a href="/academy.html">Online Learning</li>
-        <li><a href="/connect.html">Connect</li>
-        <li><a href="/shop.html">Shop</li>
+        <li><a href="/templates/yoga.html">Yoga</a></li>
+        <li><a href="/templates/ayurveda.html">Ayurveda</li>
+        <li><a href="/templates/academy.html">Online Learning</li>
+        <li><a href="/templates/connect.html">Connect</li>
+        <li><a href="/templates/store.html">Shop</li>
       </ul>
     </div>
   </nav>
+  <!-- <div class="parallax-container">
+    <div class="back"><img src="/images/group.jpg" width="600px;"></div>
+  </div> -->
 </div>
 
 <script type="text/javascript">

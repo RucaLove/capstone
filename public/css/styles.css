@@ -63,8 +63,9 @@ p {
 }
 
 #nav-font a {
-  font-size: 0.7rem;
-  font-weight: bold;
+  font-size: 1rem;
+  /*font-weight: bold;*/
+  letter-spacing: 0.1rem;
 }
 
 .navbar-fixed {
@@ -74,7 +75,7 @@ p {
 
 nav .logo-text {
   border-left: 0.1rem solid #b6b6b6;
-  bottom: 165px;
+  /*bottom: 165px;*/
   font-size: 1.25rem;
   font-weight: 200;
   letter-spacing: 0.2rem;
@@ -99,6 +100,21 @@ nav ul li {
 
 nav ul a {
   display: inline;
+}
+
+// Class for when element is above threshold
+.pin-top {
+  position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+  position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+  position: fixed !important;
 }
 
 main {
@@ -149,7 +165,7 @@ footer.page-footer small {
 }*/
 
 .item-name {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /*STYLING FOR BIO*/
@@ -238,20 +254,93 @@ footer.page-footer small {
 
 /*CSS FOR POSES TEMPLATE*/
 
-#poseContainer {
+/*#poseContainer {
   margin: auto;
   margin-left: 10px;
   padding: 20px;
-}
+}*/
 
 .poseName {
-  padding-left: 10px;
-  text-align: center;
-  font-size: 60px;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  /*padding-left: 10px;*/
+  /*text-align: center;*/
+  /*font-size: 60px;*/
+  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
 }
 
 span {
   padding-left: 20px;
   text-align: right;
 }
+
+/*CSS FOR ACADEMY TEMPLATE*/
+
+.academy {
+  font-size: 1.0em;
+}
+
+.academyCont {
+  margin-top: 100px;
+}
+
+/*CSS FOR AYURVEDA TEMPLATE*/
+
+.doshas {
+  color: black;
+}
+
+/*CSS FOR LOGIN*/
+
+.btn-large {
+  color: white;
+  background-color: indigo;
+}
+
+.btn-large:hover {
+  color: white;
+  background-color: #FF5252;
+}
+
+.btn-large::after {
+  color: white;
+  background-color: red;
+}
+
+.back {
+  opacity: 0.75;
+}
+
+/* label color */
+ .input-field label {
+   color: indigo;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: indigo;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid indigo;
+   box-shadow: 0 1px 0 0 indigo;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid indigo;
+   box-shadow: 0 1px 0 0 indigo;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid indigo;
+   box-shadow: 0 1px 0 0 indigo;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: indigo;
+ }
+
+ .quizfont {
+    color: indigo;
+  }
+
+  .quote {
+    font-style: italic;
+  }

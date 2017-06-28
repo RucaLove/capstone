@@ -7,9 +7,9 @@
       controller: SignupController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  SignupController.$inject = ['$state', 'SignupService']
+  SignupController.$inject = ['$state', 'SignupService', '$stateParams']
 
-  function SignupController($state, SignupService) {
+  function SignupController($state, SignupService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
 
