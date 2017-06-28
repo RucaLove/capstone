@@ -66,6 +66,7 @@ p {
   font-size: 1rem;
   /*font-weight: bold;*/
   letter-spacing: 0.1rem;
+  color: indigo;
 }
 
 .navbar-fixed {
@@ -158,6 +159,7 @@ footer.page-footer small {
 }
 
 /*STYLING FOR STORE*/
+
 /*.store-front {
   border-radius: 10px;
   border-color: black;
@@ -169,12 +171,14 @@ footer.page-footer small {
 }
 
 /*STYLING FOR BIO*/
+
 .bio-pic {
   padding-left: 30px;
   /*padding-top: 100px;*/
 }
 
 /*STYLING FOR SPLASH PAGE & LOTUS ANIMATION*/
+
 #splash {
   background-color: snow;
 }
@@ -288,7 +292,37 @@ span {
   color: black;
 }
 
-/*CSS FOR LOGIN*/
+.quote {
+  font-style: italic;
+}
+
+.email {
+  color: indigo;
+  font-weight: bold;
+}
+
+/*CSS FOR QUIZ TEMPLATE*/
+
+.quizfont {
+  color: indigo;
+ }
+
+/*CSS FOR SIGNUP TEMPLATE*/
+
+.signup {
+  color: indigo;
+  font-weight: bold;
+ }
+
+ /*CSS FOR YOGA TEMPLATE*/
+
+ .om {
+   color: indigo;
+   font-weight: bold;
+   font-size: 50px;
+ }
+
+/*CSS FOR BUTTONS*/
 
 .btn-large {
   color: white;
@@ -298,6 +332,11 @@ span {
 .btn-large:hover {
   color: white;
   background-color: #FF5252;
+}
+
+.btn-large:active {
+  color: white;
+  background-color: #8bc34a;
 }
 
 .btn-large::after {
@@ -336,11 +375,3 @@ span {
  .input-field .prefix.active {
    color: indigo;
  }
-
- .quizfont {
-    color: indigo;
-  }
-
-  .quote {
-    font-style: italic;
-  }
