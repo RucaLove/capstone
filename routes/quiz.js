@@ -8,8 +8,8 @@ const knex = require('../knex');
 const humps = require('humps');
 const bcrypt = require('bcrypt');
 
-router.get('/dosha', (req, res, next) => {
-  console.log("in dosha");
+router.get('/quiz', (req, res, next) => {
+  console.log("in quiz");
   res.send({"a": "yes"});
 });
 

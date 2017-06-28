@@ -3,7 +3,7 @@
 
   angular.module('hibiskiss')
     .component('yoga', {
-      templateUrl: '/templates/yoga.template.html', // POSES TEMPLATE
+      templateUrl: '/templates/yoga.template.html', // YOGA TEMPLATE
       controller: YogaController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
@@ -14,8 +14,10 @@
     vm.$onInit = onInit
 
     function onInit() {
-
+      console.log("LOADED YOGA");
     }
 
   } // END Yoga Controller
 }());
+
+console.log("loaded yoga.component.js");
