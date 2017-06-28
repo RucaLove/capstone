@@ -5,6 +5,9 @@
     <title>HibisKISS Yoga & Ayurveda</title>
     <base href="/">
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CDN -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -40,11 +43,28 @@
   <body>
 
         <navigation></navigation>
+
+      <!-- <div class="container">
+        <form action="/login" method="post">
+            <div>
+                <label>Username:</label>
+                <input type="text" name="username"/>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password"/>
+            </div>
+            <div>
+                <input type="submit" value="Log In"/>
+            </div>
+        </form>
+      </div> -->
+
         <!-- <academy></academy> -->
         <!-- <ayurveda></ayurveda> -->
         <!-- <contact></contact> -->
         <!-- <quiz></quiz> -->
-        <!-- <login></login> -->
+        <login></login>
         <!-- <poses></poses> -->
         <!-- <schedule></schedule> -->
         <!-- <signup></signup> -->
@@ -107,6 +127,9 @@
     <script src="/js/signup.js"></script>
     <script src="/js/login.js"></script>
     <script src="/js/mindbody.js"></script>
+    <script src="/js/passport.js"></script>
+    <script src="/js/google.js"></script>
+    <script src="/js/fb.js" charset="utf-8"></script>
 
   </body>
 </html>
