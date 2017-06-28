@@ -288,6 +288,14 @@ span {
   margin-top: 100px;
 }
 
+/*input:focus {
+  color: indigo !important;
+}*/
+
+/*:active{
+  border-bottom: red;
+}*/
+
 /*CSS FOR AYURVEDA TEMPLATE*/
 
 .doshas {
@@ -301,6 +309,10 @@ span {
 .email {
   color: indigo;
   font-weight: bold;
+}
+
+#email:hover {
+  color: indigo !important;
 }
 
 /*CSS FOR QUIZ TEMPLATE*/
