@@ -32,7 +32,7 @@ const path = require('path');
 
 app.use(express.static(path.join(__dirname, './public')));
 app.use(express.static(path.join(__dirname, './node_modules')));
-app.use(express.static(path.join(__dirname, './MDB-Free')));
+app.use(express.static(path.join(__dirname, './Calendario')));
 
 // CSRF protection
 // app.use((req, res, next) => {
@@ -47,6 +47,7 @@ const poses = require('./routes/poses');
 const yoga = require('./routes/yoga');
 const ayurveda = require('./routes/ayurveda');
 const academy = require('./routes/academy');
+const calendar = require('./routes/calendar');
 const contact = require('./routes/contact');
 const quiz = require('./routes/quiz');
 const schedule = require('./routes/schedule');
@@ -58,6 +59,7 @@ app.use(poses);
 app.use(yoga);
 app.use(ayurveda);
 app.use(academy);
+app.use(calendar);
 app.use(contact);
 app.use(quiz);
 app.use(schedule);

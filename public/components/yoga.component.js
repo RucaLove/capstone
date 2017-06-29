@@ -19,5 +19,3 @@
 
   } // END Yoga Controller
 }());
-
-console.log("loaded yoga.component.js");

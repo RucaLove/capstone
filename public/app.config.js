@@ -53,6 +53,11 @@
                 component: 'schedule'
             })
             .state({ // 5th STATE (on click in this case)
+                name: 'calendar',
+                url: '/calendar',
+                component: 'calendar'
+            })
+            .state({ // 5th STATE (on click in this case)
                 name: 'signup',
                 url: '/signup',
                 component: 'signup'

@@ -3,7 +3,7 @@
 
   angular.module('hibiskiss')
     .component('schedule', {
-      templateUrl: '/templates/schedule.template.html', // POSES TEMPLATE
+      templateUrl: '/templates/schedule.template.html', // CALENDAR TEMPLATE
       controller: ScheduleController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
@@ -18,4 +18,5 @@
     }
 
   } // END Schedule Controller
+
 }());

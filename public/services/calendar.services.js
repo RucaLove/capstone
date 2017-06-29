@@ -3,10 +3,10 @@
   'use strict'
 
   angular.module('hibiskiss')
-  .service('ScheduleService', service)
+  .service('CalendarService', service)
   service.$inject = ['$http']
 
-  function service($http, ScheduleService) {
+  function service($http, CalendarService) {
 
   }
 
