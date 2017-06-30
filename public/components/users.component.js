@@ -7,15 +7,17 @@
       controller: UsersController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
-  UsersController.$inject = ['$state', 'UsersService', '$stateParams']
+  UsersController.$inject = ['$state', 'UsersService', '$stateParams', 'users']
 
-  function UsersController($state, UsersService, $stateParams) {
+  function UsersController($state, UsersService, $stateParams, users) {
     const vm = this
-    vm.$onInit = onInit
+    // vm.$onInit = onInit
+    vm.users = users.data;
+    vm.currentUser = currentUser;
 
-    function onInit() {
-
-    }
+    // function onInit() {
+    //
+    // }
 
   } // END Users Controller
 }());

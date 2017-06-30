@@ -58,24 +58,29 @@
                 component: 'calendar'
             })
             .state({ // 5th STATE (on click in this case)
-                name: 'signup',
-                url: '/signup',
-                component: 'signup'
+                name: 'login',
+                url: '/login',
+                component: 'login'
             })
             .state({ // 5th STATE (on click in this case)
                 name: 'store',
                 url: '/store',
                 component: 'store'
             })
-            .state({ // 4th STATE (on click in this case)
-                name: 'users',
-                url: '/users/:id',
-                component: 'users'
-            })
+            // .state({ // 4th STATE (on click in this case)
+            //     name: 'users',
+            //     url: '/users/:id',
+            //     component: 'users'
+            // })
             .state({ // 5th STATE (on click in this case)
                 name: 'yoga',
                 url: '/yoga',
                 component: 'yoga'
+            })
+            .state({ // 5th STATE (on click in this case)
+                name: 'members',
+                url: '/members',
+                component: 'members'
             })
 
             $urlRouterProvider.otherwise('/')

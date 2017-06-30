@@ -3,7 +3,7 @@
 
   angular.module('hibiskiss')
     .component('login', {
-      templateUrl: '/templates/login.template.html', // POSES TEMPLATE
+      templateUrl: '/templates/login.template.html', // LOGIN TEMPLATE
       controller: LoginController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
