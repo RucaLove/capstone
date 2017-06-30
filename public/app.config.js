@@ -12,11 +12,11 @@
                 url: '/',
                 component: 'splash'
             })
-            .state({ // main state/component on every page
-                name: 'nav',
-                url: '/nav',
-                component: 'nav'
-            })
+            // .state({ // main state/component on every page
+            //     name: 'nav',
+            //     url: '/nav',
+            //     component: 'nav'
+            // })
             // .state({ // 1st STATE (on click in this case)
             //     name: 'hibiskiss',
             //     url: '/hibiskiss',

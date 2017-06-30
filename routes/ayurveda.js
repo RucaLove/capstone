@@ -9,8 +9,7 @@ const humps = require('humps');
 const bcrypt = require('bcrypt');
 
 router.get('/ayurveda', (req, res, next) => {
-  console.log("in ayurveda");
-  res.send({"a": "yes"});
+
 });
 
 module.exports = router;

@@ -9,8 +9,7 @@ const humps = require('humps');
 const bcrypt = require('bcrypt');
 
 router.get('/schedule', (req, res, next) => {
-  console.log("in schedule");
-  res.send({"a": "yes"});
+
 });
 
 module.exports = router;

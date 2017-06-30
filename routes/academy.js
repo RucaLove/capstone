@@ -9,8 +9,7 @@ const humps = require('humps');
 const bcrypt = require('bcrypt');
 
 router.get('/academy', (req, res, next) => {
-  console.log("in academy");
-  res.send({"a": "yes"});
+
 });
 
 module.exports = router;

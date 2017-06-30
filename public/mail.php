@@ -8,6 +8,6 @@
   $emailcontent = "From: $firstname \n\n $lastname";
   $mailheader = "From: $email";
 
-  mail($to, $subject, $emailcontent, $mailheader) or header('Location: emailerror.html');
-  header('Location: contact.template.html');
+  mail($to, $subject, $emailcontent, $mailheader) or header('Location: index.html');
+  header('Location: index.html');
 ?>

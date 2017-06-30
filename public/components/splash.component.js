@@ -16,7 +16,7 @@
     vm.splash = splash
 
     function onInit() {
-      // vm.navShow = false
+
     }
 
     function home() {

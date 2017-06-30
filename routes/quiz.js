@@ -9,8 +9,7 @@ const humps = require('humps');
 const bcrypt = require('bcrypt');
 
 router.get('/quiz', (req, res, next) => {
-  console.log("in quiz");
-  res.send({"a": "yes"});
+
 });
 
 module.exports = router;
