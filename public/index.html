@@ -23,6 +23,8 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <script src="js/jquery-ui-datepicker.min.js"></script> -->
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
@@ -42,10 +44,26 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <!-- TIMETABLE -->
+
+    <!-- Assets for Tiva Timetable -->
+    <!-- Timetable Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css' />
+
+    <!-- Timetable CSS Files -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/timetable.css">
+
+    <!-- CSS Files for example -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"> -->
+
   </head>
   <body>
 
         <navigation></navigation>
+        <ui-view></ui-view>
 
       <!-- <div class="container">
         <form action="/login" method="post">
@@ -65,7 +83,7 @@
 
         <!-- <academy></academy> -->
         <!-- <ayurveda></ayurveda> -->
-        <calendar></calendar>
+        <!-- <calendar></calendar> -->
         <!-- <contact></contact> -->
         <!-- <quiz></quiz> -->
         <!-- <login></login> -->
@@ -77,7 +95,6 @@
         <!-- <users></users> -->
         <!-- <yoga></yoga> -->
         <hibiskiss></hibiskiss>
-        <!-- <ui-view></ui-view> -->
 
     <!-- ANGULAR  CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -136,13 +153,17 @@
     <script src="/components/yoga.component.js"></script>
 
     <!-- JAVASCRIPTS -->
-    <script src="/js/nav.js"></script>
-    <script src="/js/signup.js"></script>
-    <script src="/js/login.js"></script>
+    <!-- <script src="/js/signup.js"></script> -->
+    <!-- <script src="/js/login.js"></script> -->
     <!-- <script src="/js/mindbody.js"></script> -->
     <!-- <script src="/js/passport.js"></script> -->
     <!-- <script src="/js/google.js"></script> -->
     <!-- <script src="/js/fb.js" charset="utf-8"></script> -->
+
+    <!-- Timetable JS Files -->
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/timetable.js"></script>
 
   </body>
 </html>

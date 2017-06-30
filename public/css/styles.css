@@ -72,7 +72,7 @@ p {
 }
 
 .navbar-fixed {
-  height: 300px;
+  height: 210px;
   background-color: #FF5252;
 }
 
@@ -91,7 +91,7 @@ nav .logo-text {
 nav .logo-png {
   padding-left: 15px;
   padding-top: 13px;
-  width: 300px;
+  width: 200px;
 }
 
 nav ul li {
@@ -182,7 +182,9 @@ footer.page-footer small {
 /*STYLING FOR SPLASH PAGE & LOTUS ANIMATION*/
 
 #splash {
-  background-color: snow;
+  /*background-color: snow;*/
+  padding-bottom: 20px;
+  color: indigo;
 }
 
 .object {
@@ -230,32 +232,6 @@ footer.page-footer small {
   /* Chrome, Safari, Opera */
   animation-name: lotus;
   animation-duration: 2s;
-}
-
-@-webkit-keyframes lotus {
-  0% {
-    opacity: 100;
-    filter: alpha(opacity=1000);
-    /* For IE8 and earlier */
-  }
-  100% {
-  opacity: 0.0;
-  filter: alpha(opacity=0);
-  /* For IE8 and earlier */
-  }
-}
-
-@keyframes lotus {
-  0% {
-    opacity: 100;
-    filter: alpha(opacity=1000);
-    /* For IE8 and earlier */
-  }
-  100% {
-    opacity: 0.0;
-    filter: alpha(opacity=0);
-    /* For IE8 and earlier */
-  }
 }
 
 /*CSS FOR POSES TEMPLATE*/
@@ -392,7 +368,13 @@ span {
 
 /*CALENDAR CSS*/
 
-.ui-datepicker,
+.calendar {
+  padding-top: 100px;
+}
+
+
+
+/*.ui-datepicker,
 .ui-datepicker table,
 .ui-datepicker tr,
 .ui-datepicker td,
@@ -401,17 +383,18 @@ span {
     padding: 0;
     border: none;
     border-spacing: 0;
-}
+}*/
 
-.ui-datepicker {
-    display: none;
-    width: 294px;
+/*.ui-datepicker {
+    display: none;*/
+    /*width: 294px;*/
+    /*height: 700px;
     padding: 35px;
     cursor: default;
 
     text-transform: uppercase;
     font-family: Tahoma;
-    font-size: 12px;
+    font-size: 24px;
 
     background: #141517;
 
@@ -483,17 +466,17 @@ span {
     padding-right: 0;
 }
 
-.ui-datepicker-prev span,
-.ui-datepicker-next span{
-    display: block;
-    width: 5px;
+.ui-datepicker-prev span,*/
+/*.ui-datepicker-next span{*/
+    /*display: block;*/
+    /*width: 5px;
     height: 10px;
-    text-indent: -9999px;
+    text-indent: -9999px;*/
 
-    background-image: url(../img/arrows.png);
-}
+    /*background-image: url(../images/bio.jpg);*/
+/*}*/
 
-.ui-datepicker-prev span { background-position: 0px 0px; }
+/*.ui-datepicker-prev span { background-position: 0px 0px; }
 
 .ui-datepicker-next span { background-position: -5px 0px; }
 
@@ -514,23 +497,23 @@ span {
     padding: 0 7px;
 
     text-align: center;
-    line-height: 26px;
+    line-height: 104px;
 }
 
 .ui-datepicker-calendar .ui-state-default {
-    display: block;
-    width: 26px;
-    outline: none;
+    display: block;*/
+    /*width: 26px;*/
+    /*outline: none;*/
 
-    text-decoration: none;
-    color: #a8a8a8;
+    /*text-decoration: none;*/
+    /*color: #a8a8a8;*/
 
-    border: 1px solid transparent;
-}
+    /*border: 1px solid transparent;*/
+/*}*/
 
-.ui-datepicker-calendar .ui-state-active {
+/*.ui-datepicker-calendar .ui-state-active {
     color: #6a9113;
     border: 1px solid #6a9113;
 }
 
-.ui-datepicker-other-month .ui-state-default { color: #565656; }
+.ui-datepicker-other-month .ui-state-default { color: #565656; }*/

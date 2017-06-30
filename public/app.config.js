@@ -17,11 +17,11 @@
                 url: '/nav',
                 component: 'nav'
             })
-            .state({ // 1st STATE (on click in this case)
-                name: 'hibiskiss',
-                url: '/hibiskiss',
-                component: 'hibiskiss'
-            })
+            // .state({ // 1st STATE (on click in this case)
+            //     name: 'hibiskiss',
+            //     url: '/hibiskiss',
+            //     component: 'hibiskiss'
+            // })
             .state({ // 1st STATE (on click in this case)
                 name: 'academy',
                 url: '/academy',

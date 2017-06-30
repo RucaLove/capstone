@@ -32,7 +32,6 @@ const path = require('path');
 
 app.use(express.static(path.join(__dirname, './public')));
 app.use(express.static(path.join(__dirname, './node_modules')));
-app.use(express.static(path.join(__dirname, './Calendario')));
 
 // CSRF protection
 // app.use((req, res, next) => {
