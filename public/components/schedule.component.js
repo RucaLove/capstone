@@ -14,7 +14,7 @@
     vm.$onInit = onInit
 
     function onInit() {
-      console.log('YAYAYAYAYAYAY!')
+      console.log(angular.element('.tiva-timetable').show())
     }
 
   } // END Schedule Controller

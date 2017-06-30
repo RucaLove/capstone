@@ -65,7 +65,7 @@
         <navigation></navigation>
         <ui-view></ui-view>
 
-        <div class="tiva-timetable" data-source="json" data-view="week" style="display: block;"></div>
+        <div id="tiva-calendar" class="tiva-timetable" data-source="json" data-view="week"></div>
 
       <!-- <div class="container">
         <form action="/login" method="post">
@@ -175,6 +175,12 @@
     <!-- <script src="assets/js/jquery.min.js"></script> -->
     <script src="assets/js/jquery.magnific-popup.js"></script>
     <script src="assets/js/timetable.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.tiva-timetable').hide()
+      })
+    </script>
 
   </body>
 </html>
