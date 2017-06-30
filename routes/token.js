@@ -1,62 +1,77 @@
 'use strict';
 
+const bcrypt = require('bcrypt-as-promised');
+const boom = require('boom');
 const express = require('express');
+const jwt = require('jsonwebtoken');
+const knex = require('../knex');
+const { camelizeKeys } = require('humps');
 
 // eslint-disable-next-line new-cap
 const router = express.Router();
-const knex = require('../knex');
-const jwt = require('jsonwebtoken');
-const humps = require('humps');
-const bcrypt = require('bcrypt');
-const boom = ('boom');
-const logger = require('morgan');
 
-const cookieSession = require('cookie-session');
-const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
+router.get('/token', (req, res) => {
+  jwt.verify(req.cookies.token, process.env.JWT_KEY, (err, _payload) => {
+    if (err) {
+      return res.send(false);
+    }
 
-router.get('/token', (req, res, next) => {
-  if (req.cookies.token) {
-    res.status(200);
     res.send(true);
-  }
-  else {
-    res.status(200);
-    res.send(false);
-  }
+  });
 });
 
 router.post('/token', (req, res, next) => {
-  knex('users')
-    .where('email', req.body.email)
-    .then((users) => {
-      if (users.length === 0) {
-        res.status(400)
-        res.set('Content-Type', 'plain/text')
-        res.send('Bad email or password')
-      }
-      else {
-        const match = bcrypt.compareSync(req.body.password, users[0].hashed_password)
-        if (match === true) {
-          delete users[0].hashed_password
-          const token = jwt.sign(users[0], process.env.JWT_KEY)
-          res.cookie('token', token, { httpOnly:true })
-          res.status(200)
-          res.send(humps.camelizeKeys(users[0]))
-        }
-        else {
-          res.status(400)
-          res.set('Content-Type', 'plain/text')
-          res.send('Bad email or password')
-        }
-      }
-    })
-})
+  const { email, password } = req.body;
 
-router.delete('/token', function(req, res, next) {
+  if (!email || !email.trim()) {
+    return next(boom.create(400, 'Email must not be blank'));
+  }
+
+  if (!password || !password.trim()) {
+    return next(boom.create(400, 'Password must not be blank'));
+  }
+
+  let user;
+
+  knex('users')
+    .where('email', email)
+    .first()
+    .then((row) => {
+      if (!row) {
+        throw boom.create(400, 'Bad email or password');
+      }
+
+      user = camelizeKeys(row);
+
+      return bcrypt.compare(password, user.hashedPassword);
+    })
+    .then(() => {
+      const claim = { userId: user.id };
+      const token = jwt.sign(claim, process.env.JWT_KEY, {
+        expiresIn: '7 days'  // Adds an exp field to the payload
+      });
+
+      res.cookie('token', token, {
+        httpOnly: true,
+        expires: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7),  // 7 days
+        secure: router.get('env') === 'production'  // Set from the NODE_ENV
+      });
+
+      delete user.hashedPassword;
+
+      res.send(user);
+    })
+    .catch(bcrypt.MISMATCH_ERROR, () => {
+      throw boom.create(400, 'Bad email or password');
+    })
+    .catch((err) => {
+      next(err);
+    });
+});
+
+router.delete('/token', (req, res) => {
   res.clearCookie('token');
-  res.status(200);
-  res.send(true);
+  res.end();
 });
 
 module.exports = router;

@@ -14,7 +14,6 @@
     "angular-google-gapi": "^1.0.1",
     "angular-route": "^1.6.4",
     "angular-ui-bootstrap": "^2.5.0",
-    "bcrypt": "^1.0.2",
     "body-parser": "~1.17.1",
     "boom": "^5.1.0",
     "bootstrap": "^3.3.7",
