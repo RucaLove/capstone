@@ -7,6 +7,7 @@
 4. Online Learning - Login auth
 5. Connect - newsletter input
 6. Store - styling, build out
+7. Contributors
 
 >"I did not come to teach you.
 >

@@ -44,10 +44,12 @@ app.use(express.static(path.join(__dirname, './node_modules')));
 
 const poses = require('./routes/poses');
 const yoga = require('./routes/yoga');
+const about = require('./routes/about');
 const ayurveda = require('./routes/ayurveda');
 const academy = require('./routes/academy');
 const calendar = require('./routes/calendar');
-const contact = require('./routes/contact');
+const love = require('./routes/love');
+const newsletter = require('./routes/newsletter');
 const quiz = require('./routes/quiz');
 const schedule = require('./routes/schedule');
 const store = require('./routes/store');
@@ -56,10 +58,12 @@ const users = require('./routes/users');
 
 app.use(poses);
 app.use(yoga);
+app.use(about);
 app.use(ayurveda);
 app.use(academy);
 app.use(calendar);
-app.use(contact);
+app.use(love);
+app.use(newsletter);
 app.use(quiz);
 app.use(schedule);
 app.use(store);

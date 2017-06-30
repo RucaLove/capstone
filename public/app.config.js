@@ -12,16 +12,16 @@
                 url: '/',
                 component: 'splash'
             })
-            // .state({ // main state/component on every page
-            //     name: 'nav',
-            //     url: '/nav',
-            //     component: 'nav'
-            // })
-            // .state({ // 1st STATE (on click in this case)
-            //     name: 'hibiskiss',
-            //     url: '/hibiskiss',
-            //     component: 'hibiskiss'
-            // })
+            .state({ // main state/component on every page
+                name: 'love',
+                url: '/love',
+                component: 'love'
+            })
+            .state({ // 1st STATE (on click in this case)
+                name: 'about',
+                url: '/about',
+                component: 'about'
+            })
             .state({ // 1st STATE (on click in this case)
                 name: 'academy',
                 url: '/academy',
@@ -33,9 +33,9 @@
                 component: 'ayurveda'
             })
             .state({ // 3rd STATE (on click in this case)
-                name: 'contact',
-                url: '/contact',
-                component: 'contact'
+                name: 'newsletter',
+                url: '/newsletter',
+                component: 'newsletter'
             })
             .state({ // 3rd STATE (on click in this case)
                 name: 'quiz',

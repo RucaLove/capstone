@@ -8,7 +8,7 @@ const knex = require('../knex');
 const humps = require('humps');
 const bcrypt = require('bcrypt');
 
-router.get('/contact', (req, res, next) => {
+router.get('/love', (req, res, next) => {
 
 });
 
