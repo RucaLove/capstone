@@ -14,7 +14,7 @@
     vm.$onInit = onInit
 
     function onInit() {
-
+      console.log('YAYAYAYAYAYAY!')
     }
 
   } // END Schedule Controller
