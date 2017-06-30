@@ -19,6 +19,7 @@
         .then((allitems) => {
           // console.log("all items should be here: ", allitems)
           vm.items = allitems
+          $('.tiva-timetable').hide()
         })
 
         // StoreService.item()

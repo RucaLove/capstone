@@ -16,7 +16,7 @@
     vm.splash = splash
 
     function onInit() {
-
+      $('.tiva-timetable').hide()
     }
 
     function home() {

@@ -20,7 +20,7 @@ h1 {
   color: white !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1rem !important;
-  /*line-height: 2rem !important;*/
+  line-height: 2rem !important;
   font-weight: 200 !important;
 }
 
@@ -113,7 +113,7 @@ nav ul li {
 }
 
 nav ul a {
-  /*display: inline !important;*/
+  display: inline !important;
 }
 
 // Class for when element is above threshold

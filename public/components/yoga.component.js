@@ -14,7 +14,7 @@
     vm.$onInit = onInit
 
     function onInit() {
-      console.log("LOADED YOGA");
+      $('.tiva-timetable').hide()
     }
 
   } // END Yoga Controller

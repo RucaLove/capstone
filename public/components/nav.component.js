@@ -16,6 +16,7 @@
 
     function onInit() {
       // vm.navShow = false
+      $('.tiva-timetable').hide()
     }
 
     // function gonav() {

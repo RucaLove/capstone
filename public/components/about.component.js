@@ -14,7 +14,7 @@
     vm.$onInit = onInit
 
     function onInit() {
-
+      $('.tiva-timetable').hide()
     }
 
   } // END About Controller
