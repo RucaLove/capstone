@@ -82,6 +82,11 @@
                 url: '/members',
                 component: 'members'
             })
+            .state({ // 5th STATE (on click in this case)
+                name: 'student',
+                url: '/student',
+                component: 'student'
+            })
 
             $urlRouterProvider.otherwise('/')
     } // END CONFIG FUNCTION

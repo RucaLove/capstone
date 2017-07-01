@@ -178,11 +178,9 @@ footer.page-footer small {
 
 /*STYLING FOR STORE*/
 
-/*.store-front {
-  border-radius: 10px;
-  border-color: black;
-  border-width: medium;
-}*/
+.store-front {
+  padding: 10px;
+}
 
 .item-name {
   font-size: 12px !important;
@@ -284,6 +282,10 @@ span {
   margin-top: 100px !important;
 }
 
+.embedded {
+
+}
+
 /*input:focus {
   color: indigo !important;
 }*/
@@ -357,8 +359,12 @@ td {
 
 /*CSS FOR BUTTONS*/
 
-.btn-large {
+.click {
   color: white !important;
+}
+
+.btn-large {
+  color: white !import nt;
   background-color: indigo !important;
 }
 

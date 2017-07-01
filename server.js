@@ -55,6 +55,7 @@ const quiz = require('./routes/quiz');
 const schedule = require('./routes/schedule');
 const signup = require('./routes/signup');
 const store = require('./routes/store');
+const student = require('./routes/student');
 const token = require('./routes/token');
 const users = require('./routes/users');
 
@@ -71,6 +72,7 @@ app.use(quiz);
 app.use(schedule);
 app.use(signup);
 app.use(store);
+app.use(student);
 app.use(token);
 app.use(users);
 
