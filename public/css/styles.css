@@ -6,6 +6,11 @@ body {
 }
 .container {
   background-color: #FF5252 !important;
+  font-family: sans-serif !important;
+}
+
+.parralax-container {
+  font-size: 15px;
 }
 
 #explanation {
@@ -49,11 +54,11 @@ h4 {
 }
 
 h5 {
-  font-size: 1.2em !important;
+  font-size: 1.3em !important;
   /*color: #607d8b;*/
   color: black !important;
   text-transform: uppercase !important;
-  text-align: right !important;
+  /*text-align: right !important;*/
 }
 
 h6 {
@@ -113,7 +118,7 @@ nav ul li {
 }
 
 nav ul a {
-  display: inline !important;
+  /*display: inline !important;*/
 }
 
 // Class for when element is above threshold
@@ -262,13 +267,17 @@ footer.page-footer small {
 
 span {
   padding-left: 20px !important;
-  text-align: right !important;
+  /*text-align: right !important;*/
 }
 
 /*CSS FOR ACADEMY TEMPLATE*/
 
+.academyFont {
+  font-size: 1.2em !important;
+}
+
 .academy {
-  font-size: 1.0em !important;
+  font-size: 1.1em !important;
 }
 
 .academyCont {
@@ -303,6 +312,15 @@ span {
 }
 
 /*CSS FOR QUIZ TEMPLATE*/
+
+th {
+  padding-bottom: 10px !important;
+  font-size: 16px;
+}
+
+td {
+  padding: 10px !important;
+}
 
 .quizfont {
   color: indigo !important;

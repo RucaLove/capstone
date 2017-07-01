@@ -681,7 +681,7 @@ exports.seed = function(knex) {
             {
                 id: 53,
                     "pose_name_english": "Three Faced Forward Bend",
-                    "pose_name_sanskrit": "Triang Mukha Ekapada Paschimottanasana",
+                    "pose_name_sanskrit": "Mukha Paschimottanasana",
                     "pose_name_sanskrit_characters": "",
                     "pose_img": "/images/dancer.jpg",
                     "difficulty_level": "Easy",
