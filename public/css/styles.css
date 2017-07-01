@@ -326,6 +326,10 @@ td {
   color: indigo !important;
  }
 
+ .doshaTotal {
+   font-size: 16px;
+ }
+
 /*CSS FOR SIGNUP TEMPLATE*/
 
 .signup {

@@ -17,5 +17,28 @@
       $('.tiva-timetable').hide()
     }
 
+    function updateVataSum() {
+      var totalVata = 0;
+      $(".vata:checked").each(function(i, n) { totalVata += parseInt($(n).val()); })
+      $("#totalVata").val(totalVata);
+    }
+    function updatePittaSum() {
+      var totalPitta = 0;
+      $(".pitta:checked").each(function(i, n) { totalPitta += parseInt($(n).val()); })
+      $("#totalPitta").val(totalPitta);
+    }
+    function updateKaphaSum() {
+      var totalKapha = 0;
+      $(".kapha:checked").each(function(i, n) { totalKapha += parseInt($(n).val()); })
+      $("#totalKapha").val(totalKapha);
+    }
+    // run the update on every checkbox change and on startup
+    $("input.vata").change(updateVataSum);
+    updateVataSum();
+    $("input.pitta").change(updatePittaSum);
+    updatePittaSum();
+    $("input.kapha").change(updateKaphaSum);
+    updateKaphaSum();
+
   } // END Quiz Controller
 }());

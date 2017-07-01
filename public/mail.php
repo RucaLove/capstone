@@ -8,6 +8,6 @@
   $emailcontent = "From: $firstname \n\n $lastname";
   $mailheader = "From: $email";
 
-  mail($to, $subject, $emailcontent, $mailheader) or header('Location: index.html');
-  header('Location: index.html');
+  mail($to, $subject, $emailcontent, $mailheader) or header('Location: https://rucalove-hibiskiss.herokuapp.com/');
+  header('Location: https://rucalove-hibiskiss.herokuapp.com/');
 ?>
