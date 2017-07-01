@@ -351,6 +351,10 @@ td {
    font-size: 50px !important;
  }
 
+ .yogaListItems {
+   font-size: 16px;
+ }
+
 /*CSS FOR BUTTONS*/
 
 .btn-large {
