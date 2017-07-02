@@ -105,8 +105,8 @@ nav .logo-text {
 }
 
 nav .logo-png {
-  padding-left: 15px !important;
-  padding-top: 13px !important;
+  /*padding-left: 15px !important;*/
+  /*padding-top: 13px !important;*/
   width: 200px !important;
 }
 
@@ -430,3 +430,5 @@ td {
   background-color: white !important;
   padding: 20px !important;
 }
+
+/*BIO ANIMATION*/

@@ -15,6 +15,7 @@
 
     function onInit() {
       $('.tiva-timetable').hide()
+      
     }
 
   } // END About Controller
