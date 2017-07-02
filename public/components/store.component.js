@@ -20,6 +20,8 @@
           // console.log("all items should be here: ", allitems)
           vm.items = allitems
           $('.tiva-timetable').hide()
+          $('.logo-text-only').hide()
+          $('.brand-logo').show()
         })
 
         // StoreService.item()

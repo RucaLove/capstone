@@ -15,6 +15,8 @@
 
     function onInit() {
       console.log(angular.element('.tiva-timetable').show())
+      $('.logo-text-only').hide()
+      $('.brand-logo').show()
     }
 
   } // END Schedule Controller

@@ -15,6 +15,8 @@
 
     function onInit() {
       $('.tiva-timetable').hide()
+      $('.logo-text-only').hide()
+      $('.brand-logo').show()
     }
 
   } // END Academy Controller
