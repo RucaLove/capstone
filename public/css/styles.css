@@ -201,6 +201,14 @@ footer.page-footer small {
   padding-left: 30px !important;
   /*padding-top: 100px;*/
 }
+.bio-pad {
+  padding-left: 10px !important;
+  /*padding-top: 100px;*/
+}
+
+.nama {
+  padding-top: 50px;
+}
 
 /*STYLING FOR SPLASH PAGE & LOTUS ANIMATION*/
 
