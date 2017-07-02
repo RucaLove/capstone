@@ -17,6 +17,7 @@
 
     function onInit() {
       $('.tiva-timetable').hide()
+      $('.brand-logo').hide()
     }
 
     function home() {
