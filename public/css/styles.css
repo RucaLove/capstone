@@ -374,6 +374,18 @@ td {
    font-size: 16px;
  }
 
+ /*CSS FOR NEWLETTER TEMPLATE*/
+
+.newsletter-title {
+  font-size: 1.3em !important;
+  color: black !important;
+  text-transform: uppercase !important;
+ line-height: 48px !important;
+ font-family: sans-serif !important;
+ color: gray !important;
+ letter-spacing: 0.1rem !important;
+}
+
 /*CSS FOR BUTTONS*/
 
 .click {
