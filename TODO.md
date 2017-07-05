@@ -14,3 +14,7 @@
 >Love will teach you."
 >
 > Author Unknown
+
+### How to reset your path
+
+`export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"`
