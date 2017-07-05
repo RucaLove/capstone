@@ -19,6 +19,8 @@ Visit the current deployed version of HibisKISS Yoga & Ayurveda: [rucalove-hibis
 
 ### Technologies Used:
 * AngularJS: front-end JS framework, enabled dynamic user interface
+* Javascript, jQuery, MaterializeCSS, BootstrapCSS, HTML5, CSS3
+* PaylPal, Tiva-Calendar, MailChimps
 * Express.<span>js, Node.<span>js server and PostgreSQL database
 
 If you have any ideas or have collaborations questions, please don't hesitate to
