@@ -19,6 +19,22 @@
       $('.brand-logo').show()
     }
 
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://us16.api.mailchimp.com/3.0/",
+      "method": "GET",
+      "headers": {
+        "authorization": "apikey: 4491973242abdc8a388679df25e5e53e-us16",
+        "cache-control": "no-cache"
+      },
+      "data": "{\n\t\"id\": \"MC002\",\n\t\"list_id\": \"205d96e6b4\",\n\t\"name\": \"Freddie's T-Shirt Sales\",\n\t\"domain\": \"freddiesjokes.com\",\n\t\"email_address\": \"shirts@freddiesjokes.com\",\n\t\"currency_code\": \"USD\",\n\t\"primary-locale\": \"us\",\n\t\"timezone\": \"Eastern\",\n\t\"address\": {\n\t\t\"address1\": \"675 Ponce de Leon Ave NE\",\n\t\t\"address2\": \"Suite 5000\",\n\t\t\"city\": \"Atlanta, GA 30308\"\n\t}\n}"
+    }
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+
 // MAIL CHIMP API
     // let mailChimp = function mailChimp(data) {
     // }

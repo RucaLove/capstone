@@ -17,6 +17,8 @@
       $('.tiva-timetable').hide()
       $('.logo-text-only').hide()
       $('.brand-logo').show()
+      $('.modal').modal()
+      $('.collapsible').collapsible()
     }
 
     function updateVataSum() {
