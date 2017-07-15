@@ -3,7 +3,7 @@
 
   angular.module('hibiskiss')
     .component('ayurveda', {
-      templateUrl: '/templates/ayurveda.template.html', // POSES TEMPLATE
+      templateUrl: '/templates/ayurveda.template.html', // AYURVEDA TEMPLATE
       controller: AyurvedaController
     })
   //ALLOWS US TO CHANGE STATES BY BUTTON CLICK
