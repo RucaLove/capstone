@@ -12,11 +12,17 @@
   function AcademyController($state, AcademyService, $stateParams) {
     const vm = this
     vm.$onInit = onInit
+    vm.login = login
 
     function onInit() {
       $('.tiva-timetable').hide()
       $('.logo-text-only').hide()
       $('.brand-logo').show()
+    }
+
+    function login(event) {
+      // ng-click / ng-sumit will send the data through $scope.login()
+      AcademyService.login(formData)
     }
 
   } // END Academy Controller

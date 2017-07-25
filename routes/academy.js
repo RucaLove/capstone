@@ -12,4 +12,15 @@ router.get('/academy', (req, res, next) => {
 
 });
 
+router.post('/api/users', (req, res, next) => {
+  req.body
+  knex('users')
+  .where('email', req.body.email)
+  .then((user) => {
+    if(user.length === 0) {
+      
+    }
+  })
+})
+
 module.exports = router;
